@@ -28,16 +28,16 @@ class CustomTabBarController: UITabBarController {
     }
     
     fileprivate func configItemViewController() {
-        configControllerItem(name: "PaintViewController", title: "创作", imageName: "tab_recent_nor")
-        configControllerItem(name: "RankingViewController", title: "排行", imageName: "tab_qworld_nor")
-        configControllerItem(name: "UserViewController", title: "我的", imageName: "tab_buddy_nor")
+//        [[UITabBar appearance] setBarTintColor:[UIColor whiteColor]];
+        configControllerItem(name: "PaintViewController", title: "创作", imageName: "paint_icon_nomal", selectImageName: "paint_icon_focus")
+        configControllerItem(name: "RankingViewController", title: "排行", imageName: "ranking_icon_nomal", selectImageName: "ranking_icon_focus")
+        configControllerItem(name: "UserViewController", title: "我的", imageName: "user_icon_nomal", selectImageName: "user_icon_focus")
     }
     
-    private func configControllerItem(name: String, title: String, imageName: String) {
+    private func configControllerItem(name: String, title: String, imageName: String, selectImageName: String) {
         let vc = UIViewController(nibName: name, bundle: nil)
         let navVc = UINavigationController(rootViewController: vc)
-        navVc.tabBarItem.title = title
-        navVc.tabBarItem.image = UIImage(named:imageName)
+        navVc.tabBarItem = UITabBarItem(title: title, image: UIImage(named:imageName)?.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named:selectImageName)?.withRenderingMode(.alwaysOriginal))
         self.addChildViewController(navVc)
     }
 
