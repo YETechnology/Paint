@@ -14,6 +14,7 @@
 		3C0C414C1F7F8EE20051F646 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C414A1F7F8EE20051F646 /* LaunchScreen.storyboard */; };
 		3C0C41571F7F8EE20051F646 /* PaintTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C41561F7F8EE20051F646 /* PaintTests.swift */; };
 		3C0C41621F7F8EE30051F646 /* PaintUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C41611F7F8EE30051F646 /* PaintUITests.swift */; };
+		46B3733B825E53BD7A80908C /* Pods_Paint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F291DF89D67782E9A70D181 /* Pods_Paint.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F291DF89D67782E9A70D181 /* Pods_Paint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Paint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C0C413E1F7F8EE20051F646 /* Paint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C0C41411F7F8EE20051F646 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C0C41431F7F8EE20051F646 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		3C0C415D1F7F8EE30051F646 /* PaintUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaintUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C0C41611F7F8EE30051F646 /* PaintUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintUITests.swift; sourceTree = "<group>"; };
 		3C0C41631F7F8EE30051F646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		934AF5933EFB412B2E7F3811 /* Pods-Paint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paint.release.xcconfig"; path = "Pods/Target Support Files/Pods-Paint/Pods-Paint.release.xcconfig"; sourceTree = "<group>"; };
+		B5D403C4BDF5819DBE458D7C /* Pods-Paint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paint.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Paint/Pods-Paint.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46B3733B825E53BD7A80908C /* Pods_Paint.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,8 @@
 				3C0C41551F7F8EE20051F646 /* PaintTests */,
 				3C0C41601F7F8EE30051F646 /* PaintUITests */,
 				3C0C413F1F7F8EE20051F646 /* Products */,
+				6A34D15770C759F3013DD188 /* Pods */,
+				A092D7E44C8D11D888E19D18 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +104,9 @@
 		3C0C41401F7F8EE20051F646 /* Paint */ = {
 			isa = PBXGroup;
 			children = (
+				3C2651ED1F808762007B476C /* Data */,
+				3C2651EC1F808759007B476C /* Network */,
+				3C2651EA1F808745007B476C /* UI */,
 				3C0C41411F7F8EE20051F646 /* AppDelegate.swift */,
 				3C0C41431F7F8EE20051F646 /* ViewController.swift */,
 				3C0C41451F7F8EE20051F646 /* Main.storyboard */,
@@ -125,6 +135,76 @@
 			path = PaintUITests;
 			sourceTree = "<group>";
 		};
+		3C2651EA1F808745007B476C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3C2651EE1F808778007B476C /* Home */,
+				3C2651EF1F808782007B476C /* Paint */,
+				3C2651F01F8087B1007B476C /* Ranking */,
+				3C2651F11F8087B8007B476C /* User */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		3C2651EC1F808759007B476C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3C2651ED1F808762007B476C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3C2651EE1F808778007B476C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3C2651EF1F808782007B476C /* Paint */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Paint;
+			sourceTree = "<group>";
+		};
+		3C2651F01F8087B1007B476C /* Ranking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Ranking;
+			sourceTree = "<group>";
+		};
+		3C2651F11F8087B8007B476C /* User */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		6A34D15770C759F3013DD188 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5D403C4BDF5819DBE458D7C /* Pods-Paint.debug.xcconfig */,
+				934AF5933EFB412B2E7F3811 /* Pods-Paint.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A092D7E44C8D11D888E19D18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F291DF89D67782E9A70D181 /* Pods_Paint.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +212,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C0C41661F7F8EE30051F646 /* Build configuration list for PBXNativeTarget "Paint" */;
 			buildPhases = (
+				780E8B271247DF7666F8FCB4 /* [CP] Check Pods Manifest.lock */,
 				3C0C413A1F7F8EE20051F646 /* Sources */,
 				3C0C413B1F7F8EE20051F646 /* Frameworks */,
 				3C0C413C1F7F8EE20051F646 /* Resources */,
+				9F2300EAFF26241DFC9D395B /* [CP] Embed Pods Frameworks */,
+				7623E3C2C8E35EE911DAA19E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +336,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7623E3C2C8E35EE911DAA19E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Paint/Pods-Paint-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		780E8B271247DF7666F8FCB4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Paint-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F2300EAFF26241DFC9D395B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Paint/Pods-Paint-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Paint/Pods-Paint-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3C0C413A1F7F8EE20051F646 /* Sources */ = {
@@ -424,10 +561,13 @@
 		};
 		3C0C41671F7F8EE30051F646 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5D403C4BDF5819DBE458D7C /* Pods-Paint.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XWV65WS8FZ;
 				INFOPLIST_FILE = Paint/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.YETech.Paint;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -438,10 +578,13 @@
 		};
 		3C0C41681F7F8EE30051F646 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 934AF5933EFB412B2E7F3811 /* Pods-Paint.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XWV65WS8FZ;
 				INFOPLIST_FILE = Paint/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.YETech.Paint;
 				PRODUCT_NAME = "$(TARGET_NAME)";
