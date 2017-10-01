@@ -28,14 +28,15 @@ class CustomTabBarController: UITabBarController {
     }
     
     fileprivate func configItemViewController() {
-//        [[UITabBar appearance] setBarTintColor:[UIColor whiteColor]];
-        configControllerItem(name: "PaintViewController", title: "创作", imageName: "paint_icon_nomal", selectImageName: "paint_icon_focus")
-        configControllerItem(name: "RankingViewController", title: "排行", imageName: "ranking_icon_nomal", selectImageName: "ranking_icon_focus")
-        configControllerItem(name: "UserViewController", title: "我的", imageName: "user_icon_nomal", selectImageName: "user_icon_focus")
+        let paintVc = PaintViewController(nibName: "PaintViewController", bundle: nil)
+        configControllerItem(paintVc, title: "创作", imageName: "paint_icon_nomal", selectImageName: "paint_icon_focus")
+        let rankingVc = RankingViewController(nibName:"RankingViewController" , bundle: nil)
+        configControllerItem(rankingVc, title: "排行", imageName: "ranking_icon_nomal", selectImageName: "ranking_icon_focus")
+        let userVc = UserViewController(nibName: "UserViewController", bundle: nil)
+        configControllerItem(userVc, title: "我的", imageName: "user_icon_nomal", selectImageName: "user_icon_focus")
     }
     
-    private func configControllerItem(name: String, title: String, imageName: String, selectImageName: String) {
-        let vc = UIViewController(nibName: name, bundle: nil)
+    private func configControllerItem(_ vc: UIViewController, title: String, imageName: String, selectImageName: String) {
         let navVc = UINavigationController(rootViewController: vc)
         navVc.tabBarItem = UITabBarItem(title: title, image: UIImage(named:imageName)?.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named:selectImageName)?.withRenderingMode(.alwaysOriginal))
         self.addChildViewController(navVc)
