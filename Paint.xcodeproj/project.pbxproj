@@ -14,6 +14,8 @@
 		3C0C414C1F7F8EE20051F646 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C414A1F7F8EE20051F646 /* LaunchScreen.storyboard */; };
 		3C0C41571F7F8EE20051F646 /* PaintTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C41561F7F8EE20051F646 /* PaintTests.swift */; };
 		3C0C41621F7F8EE30051F646 /* PaintUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C41611F7F8EE30051F646 /* PaintUITests.swift */; };
+		3C2651F31F808D5C007B476C /* YENetworkEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2651F21F808D5C007B476C /* YENetworkEngine.swift */; };
+		3C2651F51F80B23D007B476C /* TestObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2651F41F80B23D007B476C /* TestObject.swift */; };
 		46B3733B825E53BD7A80908C /* Pods_Paint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F291DF89D67782E9A70D181 /* Pods_Paint.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +51,8 @@
 		3C0C415D1F7F8EE30051F646 /* PaintUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaintUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C0C41611F7F8EE30051F646 /* PaintUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintUITests.swift; sourceTree = "<group>"; };
 		3C0C41631F7F8EE30051F646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C2651F21F808D5C007B476C /* YENetworkEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YENetworkEngine.swift; sourceTree = "<group>"; };
+		3C2651F41F80B23D007B476C /* TestObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestObject.swift; sourceTree = "<group>"; };
 		934AF5933EFB412B2E7F3811 /* Pods-Paint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paint.release.xcconfig"; path = "Pods/Target Support Files/Pods-Paint/Pods-Paint.release.xcconfig"; sourceTree = "<group>"; };
 		B5D403C4BDF5819DBE458D7C /* Pods-Paint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paint.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Paint/Pods-Paint.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -149,6 +153,7 @@
 		3C2651EC1F808759007B476C /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				3C2651F21F808D5C007B476C /* YENetworkEngine.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -156,6 +161,7 @@
 		3C2651ED1F808762007B476C /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				3C2651F41F80B23D007B476C /* TestObject.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -396,7 +402,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C2651F31F808D5C007B476C /* YENetworkEngine.swift in Sources */,
 				3C0C41441F7F8EE20051F646 /* ViewController.swift in Sources */,
+				3C2651F51F80B23D007B476C /* TestObject.swift in Sources */,
 				3C0C41421F7F8EE20051F646 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
