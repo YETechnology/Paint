@@ -23,6 +23,7 @@
 		3CD52AB71F80D0B200407C7E /* RankingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CD52AB51F80D0B200407C7E /* RankingViewController.xib */; };
 		3CD52ABA1F80D0C300407C7E /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD52AB81F80D0C300407C7E /* UserViewController.swift */; };
 		3CD52ABB1F80D0C300407C7E /* UserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CD52AB91F80D0C300407C7E /* UserViewController.xib */; };
+		3CD52ABD1F836DC500407C7E /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD52ABC1F836DC500407C7E /* UIColor+Hex.swift */; };
 		46B3733B825E53BD7A80908C /* Pods_Paint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F291DF89D67782E9A70D181 /* Pods_Paint.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		3CD52AB51F80D0B200407C7E /* RankingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RankingViewController.xib; sourceTree = "<group>"; };
 		3CD52AB81F80D0C300407C7E /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		3CD52AB91F80D0C300407C7E /* UserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserViewController.xib; sourceTree = "<group>"; };
+		3CD52ABC1F836DC500407C7E /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		934AF5933EFB412B2E7F3811 /* Pods-Paint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paint.release.xcconfig"; path = "Pods/Target Support Files/Pods-Paint/Pods-Paint.release.xcconfig"; sourceTree = "<group>"; };
 		B5D403C4BDF5819DBE458D7C /* Pods-Paint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paint.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Paint/Pods-Paint.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -211,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				3C2651F71F80C359007B476C /* ViewExtension */,
+				3CD52ABC1F836DC500407C7E /* UIColor+Hex.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -417,10 +420,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Paint/Pods-Paint-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -437,6 +442,7 @@
 				3C2651F31F808D5C007B476C /* YENetworkEngine.swift in Sources */,
 				3CD52ABA1F80D0C300407C7E /* UserViewController.swift in Sources */,
 				3CD52AB21F80D0A100407C7E /* PaintViewController.swift in Sources */,
+				3CD52ABD1F836DC500407C7E /* UIColor+Hex.swift in Sources */,
 				3C2651F91F80C38F007B476C /* UIView+Status.swift in Sources */,
 				3CD52AB61F80D0B200407C7E /* RankingViewController.swift in Sources */,
 				3CD52AAB1F80C54700407C7E /* CustomTabBarController.swift in Sources */,
