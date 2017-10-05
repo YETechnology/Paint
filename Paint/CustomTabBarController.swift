@@ -28,7 +28,7 @@ class CustomTabBarController: UITabBarController {
     }
     
     fileprivate func configItemViewController() {
-        let paintVc = PaintViewController(nibName: "PaintViewController", bundle: nil)
+        let paintVc = PaintListViewController(nibName: "PaintListViewController", bundle: nil)
         configControllerItem(paintVc, title: "创作", imageName: "paint_icon_nomal", selectImageName: "paint_icon_focus")
         let rankingVc = RankingViewController(nibName:"RankingViewController" , bundle: nil)
         configControllerItem(rankingVc, title: "排行", imageName: "ranking_icon_nomal", selectImageName: "ranking_icon_focus")
